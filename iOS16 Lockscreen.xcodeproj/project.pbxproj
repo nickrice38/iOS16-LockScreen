@@ -11,6 +11,8 @@
 		C4046C0D289AC80D005C39C9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4046C0C289AC80D005C39C9 /* ContentView.swift */; };
 		C4046C0F289AC811005C39C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4046C0E289AC811005C39C9 /* Assets.xcassets */; };
 		C4046C12289AC811005C39C9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4046C11289AC811005C39C9 /* Preview Assets.xcassets */; };
+		C4046C19289AE262005C39C9 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4046C18289AE262005C39C9 /* Model.swift */; };
+		C4046C1B289AF6BA005C39C9 /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4046C1A289AF6BA005C39C9 /* Notification.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		C4046C0C289AC80D005C39C9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C4046C0E289AC811005C39C9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C4046C11289AC811005C39C9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C4046C18289AE262005C39C9 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		C4046C1A289AF6BA005C39C9 /* Notification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +57,8 @@
 			children = (
 				C4046C0A289AC80D005C39C9 /* iOS16_LockscreenApp.swift */,
 				C4046C0C289AC80D005C39C9 /* ContentView.swift */,
+				C4046C1A289AF6BA005C39C9 /* Notification.swift */,
+				C4046C18289AE262005C39C9 /* Model.swift */,
 				C4046C0E289AC811005C39C9 /* Assets.xcassets */,
 				C4046C10289AC811005C39C9 /* Preview Content */,
 			);
@@ -137,6 +143,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4046C1B289AF6BA005C39C9 /* Notification.swift in Sources */,
+				C4046C19289AE262005C39C9 /* Model.swift in Sources */,
 				C4046C0D289AC80D005C39C9 /* ContentView.swift in Sources */,
 				C4046C0B289AC80D005C39C9 /* iOS16_LockscreenApp.swift in Sources */,
 			);
