@@ -13,6 +13,7 @@
 		C4046C12289AC811005C39C9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4046C11289AC811005C39C9 /* Preview Assets.xcassets */; };
 		C4046C19289AE262005C39C9 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4046C18289AE262005C39C9 /* Model.swift */; };
 		C4046C1B289AF6BA005C39C9 /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4046C1A289AF6BA005C39C9 /* Notification.swift */; };
+		C4046C21289BDB48005C39C9 /* BottomControls.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4046C20289BDB48005C39C9 /* BottomControls.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		C4046C11289AC811005C39C9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C4046C18289AE262005C39C9 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		C4046C1A289AF6BA005C39C9 /* Notification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
+		C4046C20289BDB48005C39C9 /* BottomControls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomControls.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,10 +57,9 @@
 		C4046C09289AC80D005C39C9 /* iOS16 Lockscreen */ = {
 			isa = PBXGroup;
 			children = (
+				C4046C1F289BDB19005C39C9 /* Model */,
+				C4046C1E289BDB01005C39C9 /* Views */,
 				C4046C0A289AC80D005C39C9 /* iOS16_LockscreenApp.swift */,
-				C4046C0C289AC80D005C39C9 /* ContentView.swift */,
-				C4046C1A289AF6BA005C39C9 /* Notification.swift */,
-				C4046C18289AE262005C39C9 /* Model.swift */,
 				C4046C0E289AC811005C39C9 /* Assets.xcassets */,
 				C4046C10289AC811005C39C9 /* Preview Content */,
 			);
@@ -71,6 +72,24 @@
 				C4046C11289AC811005C39C9 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C4046C1E289BDB01005C39C9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C4046C0C289AC80D005C39C9 /* ContentView.swift */,
+				C4046C1A289AF6BA005C39C9 /* Notification.swift */,
+				C4046C20289BDB48005C39C9 /* BottomControls.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C4046C1F289BDB19005C39C9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C4046C18289AE262005C39C9 /* Model.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,6 +162,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4046C21289BDB48005C39C9 /* BottomControls.swift in Sources */,
 				C4046C1B289AF6BA005C39C9 /* Notification.swift in Sources */,
 				C4046C19289AE262005C39C9 /* Model.swift in Sources */,
 				C4046C0D289AC80D005C39C9 /* ContentView.swift in Sources */,

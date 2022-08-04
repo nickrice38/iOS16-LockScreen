@@ -37,6 +37,8 @@ struct ContentView: View {
         TabView {
             ForEach(examplePlaces, id: \.self) { place in
                 ZStack {
+                    // MARK: Background Image
+                    
                     Image(place.backgroundImage)
                         .resizable()
                         .aspectRatio(contentMode: .fill)
@@ -46,12 +48,9 @@ struct ContentView: View {
                         .offset(x: 16)
                         .offset(x: motion.x * 8, y: motion.y * 8)
                     
+                    // MARK: Time & Date
+                    
                     VStack {
-                        Text(place.location.uppercased())
-                            .font(.system(size: 12, weight: .medium, design: .rounded))
-                            .foregroundColor(.white)
-                            .offset(y: -2)
-                        
                         Text(place.date)
                             .font(.system(size: 20, weight: .semibold, design: .rounded))
                             .foregroundColor(.white)
@@ -63,9 +62,8 @@ struct ContentView: View {
                     }
                     .frame(maxHeight: .infinity, alignment: .top)
                     .padding(.top, 90)
-                    .offset(x: motion.x * 2, y: motion.y * 2)
-    //                .rotation3DEffect(.degrees(motion.x * 8), axis: (x: 0, y: 1, z: 0))
-    //                .rotation3DEffect(.degrees(motion.y * 8), axis: (x: -1, y: 0, z: 0))
+                    
+                    // MARK: Foreground
                     
                     Image(place.foregroundImage)
                         .resizable()
@@ -75,9 +73,17 @@ struct ContentView: View {
                         .offset(x: 12)
                         .offset(x: motion.x * -16, y: motion.y * -16)
                     
+                    VStack {
+                        Spacer()
+
+                        BottomControls()
+                    }
+                    .frame(maxHeight: .infinity)
+                    
+                    // MARK: Notification
+                    
                     Notification()
                         .offset(y: -100)
-//                        .modifier(DraggableModifier(direction: .horizontal))
                         .opacity(opacity)
                         .scaleEffect(scale)
                         .onTapGesture {
@@ -86,6 +92,7 @@ struct ContentView: View {
                                 scale = 0
                             }
                         }
+                        .frame(maxHeight: .infinity)
                 }
             }
         }
